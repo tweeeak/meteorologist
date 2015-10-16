@@ -5,16 +5,49 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
+  <!-- Connect to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!-- Connect to Font Awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
-<nav>
+<!--<nav>
   <ul>
     <li><a href="/street_to_coords/new">Street &rarr; Coords</a></li>
     <li><a href="/coords_to_weather/new">Coords &rarr; Weather</a></li>
     <li><a href="/street_to_weather/new">Street &rarr; Weather</a></li>
   </ul>
-</nav>
+</nav> -->
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> <i class="fa fa-sun-o"></i> Meteorologist</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav hidden-md hidden-lg">
+          <li><a href="/street_to_coords/new">Street &rarr; Coords</a></li>
+          <li><a href="/coords_to_weather/new">Coords &rarr; Weather</a></li>
+          <li><a href="/street_to_weather/new">Street &rarr; Weather</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
 
 <%= yield %>
 

@@ -1,7 +1,7 @@
-<h1>Meteorologist</h1>
+<!--<h1>Meteorologist</h1>-->
 
-<p>Here's the outlook for <%= @street_address %>:</p>
-
+<h1>Here's the outlook for <%= @street_address %>:</h1>
+<div class="container">
 <dl>
   <dt>Current Temperature</dt>
   <dd><%= @current_temperature %></dd>
@@ -18,3 +18,4 @@
   <dt>Outlook for next several days</dt>
   <dd><%= @summary_of_next_several_days %></dd>
 </dl>
+</div>
